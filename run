@@ -1,12 +1,12 @@
 #!/bin/bash
 # set -euo pipefail
 set -x
-URL=${URL:-http://jodel-app.com}
+URL=${URL:-http://192.168.90.4:5000/}
 
 #Xorg &
 #X_PID=$!
 
-#echo $URL > /root/url
+echo $URL > /root/url
 
 #while ! curl -sf -o /dev/null "$URL"; do sleep 1; done
 xinit
