@@ -6,7 +6,8 @@ URL=${URL:-http://jodel-app.com}
 #Xorg &
 #X_PID=$!
 
-echo $URL > /root/url
+#echo $URL > /root/url
+
 while ! curl -sf -o /dev/null "$URL"; do sleep 1; done
 xinit
 
