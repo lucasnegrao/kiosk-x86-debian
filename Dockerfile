@@ -28,8 +28,8 @@ RUN apt-get install -y xinit
 ADD run /bin/run
 #ADD wallpaper.png /etc/wallpaper.png
 #ADD dot-mozilla /root/.mozilla
-#RUN chmod +x /bin/run
-#VOLUME /dev/tty0
+RUN chmod +x /bin/run
+VOLUME /dev/tty0
 
 RUN adduser --system --uid 5000 --disabled-password --shell /bin/bash  -q chromium
 RUN addgroup chromium tty
