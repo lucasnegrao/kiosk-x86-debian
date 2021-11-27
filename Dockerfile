@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update
 
-RUN apt-get install -y chromium-browser
+RUN apt-get install -y chromium
 #RUN apt-get install -y dropbear
 RUN apt-get install -y xserver-xorg-core
 RUN apt-get install -y xserver-xorg-video-fbdev
