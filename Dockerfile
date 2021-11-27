@@ -35,6 +35,7 @@ RUN adduser --system --uid 5000 --disabled-password --shell /bin/bash  -q chromi
 RUN addgroup chromium tty
 
 ADD start-chromium /root/start-chromium
+RUN chmod +x /root/start-chromium
 
 #USER chromium
 
